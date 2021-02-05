@@ -1,4 +1,5 @@
-import  Counter  from "./component/counter";
+import  Counter  from "./component/Counter";
+import SimpleCounter from "./component/SimpleCounter";
 import './css/App.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <div className="leftArea">
         <Counter greeting = "Hello, world~~" />
+        <SimpleCounter name="Nancy~"/>
       </div>      
     </div>
   );
