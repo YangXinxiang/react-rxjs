@@ -1,11 +1,18 @@
 /**
  * Hello World版的加减计数器
  */
-import React, { Component } from "react"
+import React, { Component } from "react";
+import ViewCounter from "./CounterView";
 export default class Counter extends Component{
-    state = {
-        count: 0
+    constructor(){
+        super(...arguments);
+        this.state = {
+            count: 0
+        }
+        this.onIncreaseClick = this.onIncreaseClick.bind(this);
+        this.onDecreaseClick = this.onDecreaseClick.bind(this);
     }
+    
     onIncreaseClick(){
         this.setState({
             count : this.state.count+1
@@ -19,14 +26,13 @@ export default class Counter extends Component{
     
     render(){
         return (
-            <div>
-                <div>
-                    {this.props.greeting} You have clicked me {this.state.count} Times~~
-                </div> 
-                <button onClick={this.onIncreaseClick.bind(this)}>加</button>   
-                <br />    
-                <button onClick={this.onDecreaseClick.bind(this)}>减</button>          
-            </div>
+            <ViewCounter
+                greeting={this.props.greeting}
+                count={this.state.count}
+                onIncreaseClick={this.onIncreaseClick}
+                onDecreaseClick={this.onDecreaseClick}
+            >        
+            </ViewCounter>
         )
     }
 }

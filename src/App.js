@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <div className="leftArea">
-        <Counter greeting = "Hello, world~~" />
-        <SimpleCounter name="Nancy~"/>
+        <Counter greeting = "Hello, world~~~~~~" />
+        <SimpleCounter name="Nancy~~~~~~"/>
       </div>      
     </div>
   );
