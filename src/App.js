@@ -1,10 +1,12 @@
-
-import './App.css';
+import  Counter  from "./component/counter";
+import './css/App.css';
 
 function App() {
   return (
     <div className="App">
-      Hello
+      <div className="leftArea">
+        <Counter greeting = "Hello, world~~" />
+      </div>      
     </div>
   );
 }
