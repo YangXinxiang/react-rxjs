@@ -7,3 +7,10 @@
   height: 300px;
   border: 1px solid red;
 }
+.counterView{
+  border: 1px solid green;
+  padding: 6px;
+}
+.counterView button{
+  margin-right: 10px;
+}
