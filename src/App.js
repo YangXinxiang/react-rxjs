@@ -2,6 +2,7 @@ import  Counter  from "./component/Counter";
 import RxCounter from "./component/RxCounter";
 import createRxTimer from "./component/RxTimer";
 import createRxTimer2 from "./component/RxTimer2";
+import RxTimer3 from "./component/RxTimer3";
 import SimpleCounter from "./component/SimpleCounter";
 import './css/App.css';
 
@@ -16,6 +17,7 @@ function App() {
         <RxCounterComp />
         <RxTimer from="mainApp"/>
         <RxTimer2 from="mainApp RxTimer2" />
+        <RxTimer3 from="mainApp RxTimer333" />
         <SimpleCounter name="Nancy~~~~~~" />
       </div>      
     </div>
