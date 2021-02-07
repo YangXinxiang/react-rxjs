@@ -6,7 +6,7 @@ import '../css/App.css';
 export default function CounterView({greeting, count, onIncreaseClick=()=>console.log(`default onIncreaseClick`), onDecreaseClick=()=>console.log(`default onDecreaseClick`) }){
     console.log(`CounterView :: enter, greeting = ${greeting}, count = ${count}, onIncreaseClick = ${onIncreaseClick}, onDecreaseClick = ${onDecreaseClick}`);
     return (
-        <div className="counterView">
+        <div className="compView">
             <div>
                 {greeting} You have clicked me {count} Times~~
             </div> 
