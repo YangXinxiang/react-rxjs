@@ -7,8 +7,9 @@ export default function observe(WrappedComponent, observableFactory, defaultStat
     return class NewComponent extends Component{
         constructor(){
             super(...arguments);
-            console.log(`[ho observe NewComponent] constructor :: enter.`);
+            console.log(`[ho observe NewComponent] constructor :: enter, this.props = ${JSON.stringify(this.props)}`);
             this.state = defaultState;
+            // debugger;
             this.props$ = observableFactory(this.props, this.state);
         }
 
@@ -16,7 +17,8 @@ export default function observe(WrappedComponent, observableFactory, defaultStat
             console.log(`[ho observe NewComponent] render :: enter, this.state = ${JSON.stringify(this.state)}`);
             // 书上有写要展开 {...this.props$}， 我认为这是没有必要的，因为this.props$ 这是一个Observable对象（准确的说是一个BehaviorSubject）
             // 没有必要传给傻瓜组件，只要把它的数据传给傻瓜组件就好。这里做备注，但是代码里也没也还是抄写上哈。
-            return <WrappedComponent  {...this.state} {...this.props$}>
+            // 哈哈哈，是我看走眼啦，this.props是要展开的，是父级传入进来的，注意不是this.props$哈，变量名字起的不好。。。
+            return <WrappedComponent  {...this.state} {...this.props}>
             </WrappedComponent>
         }
 
