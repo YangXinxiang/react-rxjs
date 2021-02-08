@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TimerView  from "./TimerView";
-import  observe  from "./HoComponent";
+import  observe  from "../HoComponent";
 import { Subject, BehaviorSubject, interval, throwError, empty, of } from "rxjs";
 import { switchMap, map , scan,tap, merge} from "rxjs/operators";
 export default function createRxTimer2(){

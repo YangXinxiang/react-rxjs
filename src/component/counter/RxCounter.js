@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CounterView  from "./CounterView";
-import  observe  from "./HoComponent";
+import  observe  from "../HoComponent";
 import { Subject, BehaviorSubject } from "rxjs";
 import { switchMap, map , scan,tap} from "rxjs/operators";
 export default function RxCounter () {

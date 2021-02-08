@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import observe from "./HoComponent";
+import observe from "../HoComponent";
 import TimerView from "./TimerView";
 import { BehaviorSubject, empty, interval, of, Subject, throwError } from "rxjs";
 import { map, merge, switchMap } from "rxjs/operators";

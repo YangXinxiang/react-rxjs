@@ -1,9 +1,9 @@
-import  Counter  from "./component/Counter";
-import RxCounter from "./component/RxCounter";
-import createRxTimer from "./component/RxTimer";
-import createRxTimer2 from "./component/RxTimer2";
-import RxTimer3 from "./component/RxTimer3";
-import SimpleCounter from "./component/SimpleCounter";
+import  Counter  from "./component/counter/Counter";
+import RxCounter from "./component/counter/RxCounter";
+import createRxTimer from "./component/timer/RxTimer";
+import createRxTimer2 from "./component/timer/RxTimer2";
+import RxTimer3 from "./component/timer/RxTimer3";
+import SimpleCounter from "./component/counter/SimpleCounter";
 import './css/App.css';
 
 function App() {
