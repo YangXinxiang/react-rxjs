@@ -1,5 +1,6 @@
 import  Counter  from "./component/counter/Counter";
 import RxCounter from "./component/counter/RxCounter";
+import ReduxCounter from "./component/counter/ReduxCounter";
 import createRxTimer from "./component/timer/RxTimer";
 import createRxTimer2 from "./component/timer/RxTimer2";
 import RxTimer3 from "./component/timer/RxTimer3";
@@ -13,8 +14,9 @@ function App() {
   return (
     <div className="App">
       <div className="leftArea">
-        <Counter greeting = "Hello, world~~~~~~" />66
+        <Counter greeting = "Hello, this is normal react counter" />
         <RxCounterComp />
+        <ReduxCounter greeting = "Hello, this is ReduxCounter~~~~~~" />
         <RxTimer from="mainApp"/>
         <RxTimer2 from="mainApp RxTimer2" />
         <RxTimer3 from="mainApp RxTimer333" />

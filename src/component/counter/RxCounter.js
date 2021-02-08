@@ -21,7 +21,7 @@ export default function RxCounter () {
                 map(count=>{
                     return {
                         count,
-                        greeting : "[RxCounter] Hello,RxCounter，这是借助RxJS和高阶组件实现的",
+                        greeting : "Hello, this is RxCounter，这是借助RxJS和高阶组件实现的",
                         onIncreaseClick,
                         onDecreaseClick,
                     }
