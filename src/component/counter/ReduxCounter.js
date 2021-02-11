@@ -8,8 +8,12 @@ const mapStateToProps = (state, ownProps)=>{
 }
 const mapDispatchToProps = (dispatch, ownProps)=>{
     return {
-        onIncreaseClick : ()=> dispatch(ActioncCreator.increase()),
-        onDecreaseClick: ()=> dispatch(ActioncCreator.decrease())
+        onIncreaseClick : ()=> {
+            console.log(`[ReduxCounter] onIncreaseClick :: enter~~~~~`);
+            return dispatch(ActioncCreator.increase())
+        },
+        onDecreaseClick: ()=> dispatch(ActioncCreator.decrease()),
+        onAsyncIncreaseClick : ()=> dispatch(ActioncCreator.asyncIncrease),
     }
 }
 

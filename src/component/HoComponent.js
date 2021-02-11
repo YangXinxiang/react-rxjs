@@ -25,7 +25,7 @@ export default function observe(WrappedComponent, observableFactory, defaultStat
         componentDidMount(){
             this.subscribtion = this.props$.subscribe(
                 value => {
-                    debugger;
+                    // debugger;
                     console.log(`[ho observe NewComponent] componentDidMount :: in next, value = ${JSON.stringify(value)}`);
                     this.setState(
                         value
