@@ -22,3 +22,12 @@ export const asyncIncrease = (dispatch) => {
         }, 1000)
     })
 }
+
+export const fetch_user = (data) =>({
+    type: ActionType.FETCH_USER,
+    data
+})
+export const fetched_user = (data) =>({
+    type: ActionType.FETCHED_USER,
+    data
+})

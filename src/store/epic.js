@@ -6,7 +6,7 @@ import { of } from "rxjs";
 import { filter,delay, map,  tap} from "rxjs/operators";
 import * as ActionType from "./ActionType";
 import { increase, decrease } from "./ActioncCreator";
-export default function epic(action$, state){
+export default function epic(action$, state$){
    return  action$.pipe(
         tap(action=>{
             console.log(`epic :: data stream enter, action = ${JSON.stringify(action)}`);

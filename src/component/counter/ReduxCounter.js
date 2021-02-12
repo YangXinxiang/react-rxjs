@@ -4,7 +4,9 @@ import * as ActioncCreator from "../../store/ActioncCreator";
 
 import CounterView from "./CounterView";
 const mapStateToProps = (state, ownProps)=>{
-    return {count: state.count}
+    return {count: state.count,
+        user:state.user
+    }
 }
 const mapDispatchToProps = (dispatch, ownProps)=>{
     return {
@@ -14,6 +16,7 @@ const mapDispatchToProps = (dispatch, ownProps)=>{
         },
         onDecreaseClick: ()=> dispatch(ActioncCreator.decrease()),
         onAsyncIncreaseClick : ()=> dispatch(ActioncCreator.asyncIncrease),
+        onFetchUserClick :()=>dispatch(ActioncCreator.fetch_user()),
     }
 }
 
